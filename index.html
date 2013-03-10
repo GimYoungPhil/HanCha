@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>HanCha</title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #3E79aC
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+
+        @font-face{
+            font-family:"family:NanumPen";
+            src:local('./font/family:NanumPen.woff'), url('./font/family:NanumPen.woff') format('woff')
+        }
+
+        body{font-family:family:NanumPen;}
+
+        div{font-family:family:NanumPen;}
+
+        span{font-family:family:NanumPen;}
+
+        .left_Page {
+            font-size: 18em;
+            color: #c8c8c8;
+            line-height: 100%;
+        }
+
+        .right_Page {
+            font-size: 4em;
+            color: #c8c8c8;
+            line-height: 100%;
+        }
+
+        .right_Page .meanTones {
+            float: left;
+            margin: 3px;
+        }
+
+        .meanTones span { 
+            display: block;
+            min-height: 30px;
+        }  
+
+        .meanTones:nth-child(1) {
+            background:#456E30;
+        }
+
+        .meanTones:nth-child(2) {
+            background:#557E40;
+        }
+
+        .meanTones:nth-child(3) {
+            background:#658E50;
+        }      
+    </style>
+
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src="touch/microloader/development.js"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
