@@ -51,11 +51,11 @@ Ext.define('HanCha.controller.Util', {
                 {
                     html: '<div class="left_Page">' + hanjaList[i]['character'] + '</div>',
                     styleHtmlContent: true,
-                    style: 'background-color: #3E79aC'
+                    style: 'background-color: #585344'
                 },{
                     html: '<div class="right_Page">' + self.sliceMeanTones(hanjaList[i]['meanTones']) + '</div>',
                     styleHtmlContent: true,
-                    style: 'background-color: #759E60'
+                    style: 'background-color: #8CC84B'
                 }]
             });
         }
