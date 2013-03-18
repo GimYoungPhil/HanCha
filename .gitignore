@@ -166,7 +166,5 @@ pip-log.txt
 ## Sencha
 #############
 
-.sencha
 build
-touch
 resources/sass/.sass-cache
